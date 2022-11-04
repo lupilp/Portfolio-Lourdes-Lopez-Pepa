@@ -32,6 +32,8 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  box-shadow: hsl(281, 39%, 71%) 0px 4px 12px;
+  transition: all 0.25s ease-in-out;
 }
 
 .circuloGithub {
@@ -48,4 +50,31 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  box-shadow: hsl(281, 39%, 71%) 0px 4px 12px;
+  transition: all 0.25s ease-in-out;
+}
+
+@media (min-width: 583px) {
+  .homeContenedor {
+    justify-content: flex-end;
+    padding-inline: 7rem;
+  }
+
+  .circuloGithub {
+    font-size: 3rem;
+    height: 4rem;
+    width: 4rem;
+    right: 6rem;
+    bottom: -1.3rem;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .circuloLinkedin {
+    font-size: 2.7rem;
+    height: 4rem;
+    width: 4rem;
+    right: 12rem;
+    bottom: -1.3rem;
+    transition: all 0.25s ease-in-out;
+  }
 }
