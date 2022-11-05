@@ -24,6 +24,15 @@ function Home() {
         </div>
         <img src={profile} alt="profile pic" className={styles.profilePic} />
       </div>
+      <div className={styles.homeLeft}>
+        <div className={styles.titulo}>Hola! Soy Lourdes López Pepa</div>
+        <div className={styles.subtitulo}>Full Stack Developer</div>
+        <div className={styles.descripcion}>
+          Full Stack Developer con formación como Diseñadora Gráfica. Con
+          pensamiento creativo, resolución de problemas, trabajo en equipo,
+          comunicación y autonomía.
+        </div>
+      </div>
     </div>
   );
 }
