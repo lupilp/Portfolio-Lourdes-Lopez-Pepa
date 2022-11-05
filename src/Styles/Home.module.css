@@ -78,6 +78,7 @@
 
 .descripcion {
   font-size: clamp(1rem, 1.4vw, 2rem);
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 583px) {
@@ -86,6 +87,7 @@
     padding-inline: 7rem;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-bottom: 8rem;
   }
 
   .circuloGithub {
