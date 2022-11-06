@@ -9,7 +9,7 @@ import {
 import styles from "../Styles/Nav.module.css";
 
 function Nav() {
-  const [menuIsOpen, setMenuIsOpen] = useState(true);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleClick = (e) => {
     setMenuIsOpen(!menuIsOpen);

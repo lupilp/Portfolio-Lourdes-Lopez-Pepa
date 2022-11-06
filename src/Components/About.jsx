@@ -15,7 +15,7 @@ import { SiRedux, SiSequelize, SiExpress, SiFigma } from "react-icons/si";
 import { BiChevronDown } from "react-icons/bi";
 
 function About() {
-  const [menuIsOpen, setMenuIsOpen] = useState(true);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleClick = (e) => {
     setMenuIsOpen(!menuIsOpen);

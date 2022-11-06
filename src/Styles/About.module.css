@@ -102,6 +102,7 @@
 @media (min-width: 583px) {
   .contAbout {
     margin-top: 3rem;
+    padding-inline: 5rem;
   }
   .infoAbout {
     display: flex;

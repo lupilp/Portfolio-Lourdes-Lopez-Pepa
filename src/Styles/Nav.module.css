@@ -67,6 +67,7 @@
   align-items: center;
   width: 40%;
   gap: 0.5rem;
+  color: hsl(261, 15%, 45%);
 }
 
 @media (min-width: 583px) {
