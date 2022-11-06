@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../Styles/About.module.css";
 import {
   DiJavascript1,
@@ -12,67 +12,86 @@ import {
 } from "react-icons/di";
 
 import { SiRedux, SiSequelize, SiExpress, SiFigma } from "react-icons/si";
+import { BiChevronDown } from "react-icons/bi";
 
 function About() {
+  const [menuIsOpen, setMenuIsOpen] = useState(true);
+
+  const handleClick = (e) => {
+    setMenuIsOpen(!menuIsOpen);
+  };
   return (
     <div className={styles.contAbout}>
       <div className={styles.titleAbout}>About Me</div>
       <div className={styles.infoAbout}>
         <div className={styles.aboutLeft}>
-          Estoy pronto por finalizar el bootcamp Soy Henry, donde me formé para
-          ser full stack web developer. Además soy Diseñadora Gráfica, y trabajé
+          Estoy pronta a finalizar el bootcamp Soy Henry, donde me formé como
+          full stack web developer. Además soy Diseñadora Gráfica, y trabajé
           como freelance durante 5 años.
         </div>
 
         <div className={styles.aboutRight}>
-          <div className={styles.skillsTitle}>Skills</div>
-          <ul className={styles.skills}>
-            <li className={styles.skillsIcon}>
-              <DiJavascript1 />
+          <div className={styles.skillsTitle}>
+            Skills
+            <button
+              className={`${styles.buttonClose} ${
+                !menuIsOpen && styles.buttonRotate
+              }`}
+              onClick={handleClick}
+            >
+              <BiChevronDown />
+            </button>
+          </div>
+
+          <ul
+            className={`${styles.skills} ${!menuIsOpen && styles.closeSkills}`}
+          >
+            <li className={styles.skillsItem}>
+              <DiJavascript1 className={styles.skillsIcon} /> Javascript
             </li>
 
-            <li className={styles.skillsIcon}>
-              <DiHtml5 />
+            <li className={styles.skillsItem}>
+              <DiHtml5 className={styles.skillsIcon} /> HTML
             </li>
 
-            <li className={styles.skillsIcon}>
-              <DiCss3 />
+            <li className={styles.skillsItem}>
+              <DiCss3 className={styles.skillsIcon} /> CSS
             </li>
 
-            <li className={styles.skillsIcon}>
-              <DiNodejsSmall />
+            <li className={styles.skillsItem}>
+              <DiNodejsSmall className={styles.skillsIcon} /> Node.js
             </li>
 
-            <li className={styles.skillsIcon}>
-              <DiReact />
+            <li className={styles.skillsItem}>
+              <DiReact className={styles.skillsIcon} /> React
             </li>
 
-            <li className={styles.skillsIcon}>
-              <SiRedux />
+            <li className={styles.skillsItem}>
+              <SiRedux className={styles.skillsIcon} /> Redux
             </li>
 
-            <li className={styles.skillsIcon}>
-              <DiPostgresql />
+            <li className={styles.skillsItem}>
+              <DiPostgresql className={styles.skillsIcon} /> Postresql
             </li>
 
-            <li className={styles.skillsIcon}>
-              <SiSequelize />
+            <li className={styles.skillsItem}>
+              <SiSequelize className={styles.skillsIcon} /> Sequelize
             </li>
 
-            <li className={styles.skillsIcon}>
-              <SiExpress />
+            <li className={styles.skillsItem}>
+              <SiExpress className={styles.skillsIcon} /> Express
             </li>
 
-            <li className={styles.skillsIcon}>
-              <SiFigma />
+            <li className={styles.skillsItem}>
+              <SiFigma className={styles.skillsIcon} /> Figma
             </li>
 
-            <li className={styles.skillsIcon}>
-              <DiPhotoshop />
+            <li className={styles.skillsItem}>
+              <DiPhotoshop className={styles.skillsIcon} /> Photoshop
             </li>
 
-            <li className={styles.skillsIcon}>
-              <DiIllustrator />
+            <li className={styles.skillsItem}>
+              <DiIllustrator className={styles.skillsIcon} /> Illustrator
             </li>
           </ul>
         </div>

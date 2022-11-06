@@ -23,8 +23,7 @@
   font-size: clamp(1.4rem, 2.3vw, 2.8rem);
   color: hsl(261, 15%, 45%);
   font-weight: 550;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .aboutLeft {
   text-align: center;
@@ -34,12 +33,13 @@
 .aboutRight {
   background-color: #fcf3e1;
   width: 85%;
-  min-height: 350px;
   display: flex;
   border-radius: 2rem;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0rem 1rem hsl(281, 39%, 71%);
+  justify-content: center;
+  position: relative;
 }
 
 .skills {
@@ -48,15 +48,55 @@
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  height: 700px;
+  transition: all 0.5s ease-in-out;
 }
 
 .skillsIcon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 27%;
+  width: 30%;
   font-size: 3rem;
   color: #d7abd2;
+  margin-top: 1.5rem;
+}
+
+.skillsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  font-weight: 500;
+  color: hsl(261, 15%, 45%);
+}
+
+.closeSkills {
+  height: 0px;
+}
+
+.buttonClose {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  font-size: 1.5rem;
+  color: blueviolet;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.buttonRotate {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 2rem;
+  top: 1.25rem;
+  font-size: 1.5rem;
+  color: blueviolet;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 @media (min-width: 583px) {
@@ -86,5 +126,20 @@
 
   .titleAbout {
     margin-bottom: 2rem;
+  }
+
+  .skills {
+    height: 350px;
+  }
+
+  .skillsItem {
+    width: 20%;
+  }
+
+  .buttonClose {
+    transition: all 0.25s ease-in-out;
+  }
+  .closeSkills {
+    height: 0px;
   }
 }
