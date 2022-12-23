@@ -18,10 +18,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fcf3e1;
+  background-color: #c287e6;
   width: 100%;
   border-radius: 2rem 2rem 0 0;
-  box-shadow: 0 0rem 2rem hsl(281, 39%, 71%);
+  box-shadow: 0 0rem 1rem #caa3e1;
   cursor: pointer;
   padding: 2rem 1rem;
   z-index: 9;
@@ -42,7 +42,7 @@
   position: absolute;
   right: 1rem;
   font-size: 1.5rem;
-  color: blueviolet;
+  color: #fafafd;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
@@ -57,8 +57,9 @@
 }
 
 .navItem:hover {
-  color: #d7acd1;
+  color: #ae55e3;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .navItem {
@@ -67,7 +68,7 @@
   align-items: center;
   width: 40%;
   gap: 0.5rem;
-  color: hsl(261, 15%, 45%);
+  color: #fffafe;
 }
 
 @media (min-width: 583px) {
@@ -75,8 +76,10 @@
     position: static;
     border-radius: 0;
     padding: 1rem;
+    padding-right: 5rem;
     display: flex;
     justify-content: flex-end;
+    height: 5rem;
   }
 
   .navItem {
@@ -91,5 +94,10 @@
   .navLista {
     height: fit-content;
     gap: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .navIcono {
+    font-size: 2rem;
   }
 }

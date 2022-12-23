@@ -1,79 +1,58 @@
 .homeContenedor {
   display: flex;
-  padding: 2rem;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .profilePic {
   width: 100%;
-  border-radius: 10rem 10rem 2rem 2rem;
+  border-radius: 1000px;
 }
 
 .imageBorder {
-  border-radius: 12rem 12rem 2rem 2rem;
-  background-color: #fcf3e1;
-  padding: 0.8rem;
-  width: 80%;
-  position: relative;
-  max-width: 350px;
+  border-radius: 900px;
+  background-color: #caa3e1;
+  padding: 1rem;
+  max-width: 550px;
+  display: flex;
 }
 
-.circuloLinkedin {
-  position: absolute;
-  right: -1rem;
-  bottom: 2rem;
-  background-color: #d7abd2;
-  color: #fcf3e1;
-  font-size: 2rem;
-  border-radius: 3rem;
-  padding: 0.2rem;
-  height: 3rem;
-  width: 3rem;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: hsl(281, 39%, 71%) 0px 4px 12px;
-  transition: all 0.25s ease-in-out;
-}
-
-.circuloGithub {
-  position: absolute;
-  right: -1rem;
-  bottom: 6rem;
-  background-color: #d7abd2;
-  color: #fcf3e1;
-  font-size: 2rem;
-  border-radius: 3rem;
-  padding: 0.3rem;
-  height: 3rem;
-  width: 3rem;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: hsl(281, 39%, 71%) 0px 4px 12px;
-  transition: all 0.25s ease-in-out;
+.imageBorder:hover {
+  background-color: #f6cbce;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0px 10px #f6cbce;
+  transition: all 0.2s ease;
 }
 
 .homeLeft {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.3rem;
   justify-content: center;
+}
+
+.hola {
+  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-weight: 700;
+  color: #c287e5;
 }
 
 .titulo {
   font-size: clamp(1.8rem, 2.8vw, 2.8rem);
   font-weight: 700;
-  color: hsl(281, 28%, 55%);
+  color: #c287e5;
 }
 
 .subtitulo {
   font-size: clamp(1.25rem, 2.2vw, 2.5rem);
-  color: hsl(261, 15%, 45%);
   font-weight: 550;
   margin-bottom: 0.75rem;
+  background-color: #ae55e3;
+  color: #f7f7ff;
+  border-radius: 30px;
+  padding-inline: 2rem;
+  width: fit-content;
 }
 
 .descripcion {
@@ -83,33 +62,14 @@
 
 @media (min-width: 583px) {
   .homeContenedor {
-    justify-content: flex-start;
-    padding-inline: 7rem;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-bottom: 8rem;
-  }
-
-  .circuloGithub {
-    font-size: 3rem;
-    height: 4rem;
-    width: 4rem;
-    right: 25.25%;
-    bottom: -1.3rem;
-    transition: all 0.25s ease-in-out;
-  }
-
-  .circuloLinkedin {
-    font-size: 2.7rem;
-    height: 4rem;
-    width: 4rem;
-    right: 55%;
-    bottom: -1.3rem;
-    transition: all 0.25s ease-in-out;
+    height: 30rem;
   }
 
   .homeLeft {
     padding-inline: 2rem;
+    width: 70%;
   }
 
   .subtitulo {

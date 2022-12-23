@@ -22,14 +22,9 @@ function About() {
   };
   return (
     <div className={styles.contAbout}>
-      <div className={styles.titleAbout}>About Me</div>
+      <div className={styles.titleAbout}>Sobre Mi</div>
+      <div>Educacion</div>
       <div className={styles.infoAbout}>
-        <div className={styles.aboutLeft}>
-          Estoy pronta a finalizar el bootcamp Soy Henry, donde me formé como
-          full stack web developer. Además soy Diseñadora Gráfica, y trabajé
-          como freelance durante 5 años.
-        </div>
-
         <div className={styles.aboutRight}>
           <div className={styles.skillsTitle}>
             Skills
@@ -71,7 +66,7 @@ function About() {
             </li>
 
             <li className={styles.skillsItem}>
-              <DiPostgresql className={styles.skillsIcon} /> Postresql
+              <DiPostgresql className={styles.skillsIcon} /> Postgresql
             </li>
 
             <li className={styles.skillsItem}>

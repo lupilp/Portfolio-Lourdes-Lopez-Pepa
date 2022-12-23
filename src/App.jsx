@@ -1,4 +1,4 @@
-// import "./App.css";
+import styles from "./App.module.css";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
@@ -7,8 +7,10 @@ function App() {
   return (
     <>
       <Nav></Nav>
-      <Home></Home>
-      <About></About>
+      <div className={styles.cont}>
+        <Home></Home>
+        <About></About>
+      </div>
     </>
   );
 }

@@ -27,15 +27,15 @@ function Nav() {
         </li>
 
         <li className={styles.navItem}>
-          <BiUser className={styles.navIcono} /> About Me
+          <BiUser className={styles.navIcono} /> Sobre Mi
         </li>
 
         <li className={styles.navItem}>
-          <BiCode className={styles.navIcono} /> Projects
+          <BiCode className={styles.navIcono} /> Proyectos
         </li>
 
         <li className={styles.navItem}>
-          <BiSend className={styles.navIcono} /> Contact Me
+          <BiSend className={styles.navIcono} /> Contacto
         </li>
       </ul>
 
