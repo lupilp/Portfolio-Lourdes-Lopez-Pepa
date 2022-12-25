@@ -2,101 +2,115 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-inline: 1rem;
-  gap: 1rem;
+  gap: 5rem;
 }
 
-.infoAbout {
+.contenidoSobreMi {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutLeft {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 }
 
 .titleAbout {
   font-size: clamp(1.7rem, 2.3vw, 2.8rem);
-  color: hsl(261, 15%, 45%);
+  color: #c287e5;
   font-weight: 650;
+  border-bottom: 3px solid #f6cbce;
 }
 
-.skillsTitle {
-  font-size: clamp(1.4rem, 2.3vw, 2.8rem);
-  color: hsl(261, 15%, 45%);
-  font-weight: 550;
-  margin-top: 1rem;
+.subTitle {
+  font-size: clamp(1.2rem, 1.8vw, 2.3rem);
+  color: #caa3e1;
+  font-weight: 600;
+  margin-bottom: 3rem;
 }
-.aboutLeft {
-  text-align: center;
-  font-size: clamp(1rem, 1.4vw, 2rem);
+
+.contenidoEducación {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.educación {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  background-color: #caa3e1;
+  color: #f7f7ff;
+  border-radius: 50px;
+  font-size: 50px;
+  padding: 0.7rem;
+}
+
+.edTitle {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.institucion {
+  font-weight: 500;
+}
+
+.fecha {
+  background-color: #f6cbce;
+  width: fit-content;
+  padding-inline: 1rem;
+  border-radius: 20px;
+  color: #f7f7ff;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .aboutRight {
-  background-color: #fcf3e1;
   width: 85%;
   display: flex;
-  border-radius: 2rem;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0rem 1rem hsl(281, 39%, 71%);
   justify-content: center;
   position: relative;
 }
 
 .skills {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 1.2rem;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-  height: 700px;
-  transition: all 0.5s ease-in-out;
-}
-
-.skillsIcon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  font-size: 3rem;
-  color: #d7abd2;
-  margin-top: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+  color: #f7f7ff;
+  font-weight: 500;
+  margin: auto;
 }
 
 .skillsItem {
+  background-color: #caa3e1;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 40%;
-  font-weight: 500;
-  color: hsl(261, 15%, 45%);
+  gap: 0.5rem;
+  padding: 0.6rem;
+  padding-inline: 1rem;
+  border-radius: 50px;
+  margin: 0.5rem;
+  cursor: default;
+  width: fit-content;
 }
 
-.closeSkills {
-  height: 0px;
+.skillsItem:hover {
+  background-color: #f6cbce;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0px 10px #f6cbce;
+  transition: all 0.2s ease;
 }
-
-.buttonClose {
-  position: absolute;
-  right: 2rem;
-  top: 1.5rem;
-  font-size: 1.5rem;
-  color: blueviolet;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease-in-out;
-}
-
-.buttonRotate {
-  transform: rotate(180deg);
-  position: absolute;
-  right: 2rem;
-  top: 1.25rem;
-  font-size: 1.5rem;
-  color: blueviolet;
-  font-weight: 500;
-  cursor: pointer;
+.skillsIcon {
+  font-size: 22px;
 }
 
 @media (min-width: 583px) {
@@ -104,18 +118,16 @@
     margin-top: 3rem;
     padding-inline: 5rem;
   }
-  .infoAbout {
-    display: flex;
+
+  .contenidoSobreMi {
+    gap: 5rem;
     flex-direction: row;
   }
 
   .aboutLeft {
-    padding-inline: 2rem;
     width: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    font-weight: 500;
+    padding: 2rem;
+    border-radius: 30px;
   }
 
   .aboutRight {
@@ -123,24 +135,39 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 2rem;
+    border-radius: 30px;
   }
 
   .titleAbout {
     margin-bottom: 2rem;
   }
 
-  .skills {
-    height: 350px;
+  .contenidoEducación {
+    gap: 8rem;
+  }
+
+  .edTitle {
+    font-size: clamp(1.8rem, calc(1.58rem + 1.12vw), 2.44rem);
+  }
+
+  .institucion {
+    font-size: clamp(1.5rem, calc(1.34rem + 0.79vw), 1.95rem);
+  }
+
+  .fecha {
+    font-size: clamp(1.25rem, calc(1.14rem + 0.54vw), 1.56rem);
+  }
+
+  .icon {
+    font-size: 65px;
   }
 
   .skillsItem {
-    width: 20%;
+    font-size: clamp(1.25rem, calc(1.14rem + 0.54vw), 1.56rem);
   }
 
-  .buttonClose {
-    transition: all 0.25s ease-in-out;
-  }
-  .closeSkills {
-    height: 0px;
+  .skillsIcon {
+    font-size: 35px;
   }
 }

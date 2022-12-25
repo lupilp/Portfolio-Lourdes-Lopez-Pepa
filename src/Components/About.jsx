@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../Styles/About.module.css";
 import {
   DiJavascript1,
@@ -12,35 +12,49 @@ import {
 } from "react-icons/di";
 
 import { SiRedux, SiSequelize, SiExpress, SiFigma } from "react-icons/si";
-import { BiChevronDown } from "react-icons/bi";
+import { FaGraduationCap } from "react-icons/fa";
 
 function About() {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-  const handleClick = (e) => {
-    setMenuIsOpen(!menuIsOpen);
-  };
   return (
     <div className={styles.contAbout}>
       <div className={styles.titleAbout}>Sobre Mi</div>
-      <div>Educacion</div>
-      <div className={styles.infoAbout}>
-        <div className={styles.aboutRight}>
-          <div className={styles.skillsTitle}>
-            Skills
-            <button
-              className={`${styles.buttonClose} ${
-                !menuIsOpen && styles.buttonRotate
-              }`}
-              onClick={handleClick}
-            >
-              <BiChevronDown />
-            </button>
-          </div>
 
-          <ul
-            className={`${styles.skills} ${!menuIsOpen && styles.closeSkills}`}
-          >
+      <div className={styles.contenidoSobreMi}>
+        <div className={styles.aboutLeft}>
+          <div className={styles.subTitle}>Educacion</div>
+          <div className={styles.contenidoEducación}>
+            <div className={styles.educación}>
+              <div className={styles.izq}>
+                <FaGraduationCap className={styles.icon} />
+              </div>
+
+              <div className={styles.der}>
+                <div className={styles.edTitle}>Full Stack Developer</div>
+                <div className={styles.institucion}>Soy Henry</div>
+                <div className={styles.fecha}>2022</div>
+              </div>
+            </div>
+
+            <div className={styles.educación}>
+              <div className={styles.izq}>
+                <FaGraduationCap className={styles.icon} />
+              </div>
+
+              <div className={styles.der}>
+                <div className={styles.edTitle}>Diseñadora Grafica</div>
+                <div className={styles.institucion}>
+                  Instituto Superior San Jorge
+                </div>
+                <div className={styles.fecha}>2017 - 2019</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.aboutRight}>
+          <div className={styles.subTitle}>Skills</div>
+
+          <ul className={styles.skills}>
             <li className={styles.skillsItem}>
               <DiJavascript1 className={styles.skillsIcon} /> Javascript
             </li>
