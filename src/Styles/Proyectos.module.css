@@ -146,4 +146,9 @@
     will-change: transform;
     object-fit: cover;
   }
+
+  .edText {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
+  }
 }
