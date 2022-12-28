@@ -2,6 +2,7 @@ import styles from "./App.module.css";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
+import Proyectos from "./Components/Proyectos";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
 
         <section id="SobreMi">
           <About></About>
+        </section>
+
+        <section id="Proyectos">
+          <Proyectos></Proyectos>
         </section>
       </div>
     </>

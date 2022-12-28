@@ -33,19 +33,19 @@
 }
 
 .hola {
-  font-size: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
+  font-size: clamp(2rem, 3vw, 3.5rem);
   font-weight: 700;
   color: #c287e5;
 }
 
 .titulo {
-  font-size: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
   font-weight: 700;
   color: #c287e5;
 }
 
 .subtitulo {
-  font-size: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+  font-size: clamp(1.25rem, 2.2vw, 2.5rem);
   font-weight: 550;
   margin-bottom: 0.75rem;
   background-color: #ae55e3;
@@ -65,7 +65,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
 
   .homeLeft {
