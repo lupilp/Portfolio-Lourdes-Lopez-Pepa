@@ -5,7 +5,9 @@
 
 @media (min-width: 583px) {
   .cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
     padding-inline: 1rem;
-    padding-top: 10rem;
   }
 }

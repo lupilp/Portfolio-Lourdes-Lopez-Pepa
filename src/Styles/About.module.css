@@ -122,41 +122,50 @@
   .contenidoSobreMi {
     gap: 5rem;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .aboutLeft {
     width: 50%;
     padding: 2rem;
     border-radius: 30px;
+    height: 35rem;
   }
 
   .aboutRight {
+    height: 35rem;
     width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     padding: 2rem;
     border-radius: 30px;
   }
 
   .titleAbout {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
+    margin-top: 3rem;
+  }
+
+  .subTitle {
+    font-size: clamp(1.73rem, calc(1.48rem + 1.24vw), 2.44rem);
   }
 
   .contenidoEducación {
-    gap: 8rem;
+    gap: 6rem;
   }
 
   .edTitle {
-    font-size: clamp(1.8rem, calc(1.58rem + 1.12vw), 2.44rem);
+    font-size: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
+    font-weight: 700;
   }
 
   .institucion {
-    font-size: clamp(1.5rem, calc(1.34rem + 0.79vw), 1.95rem);
+    font-size: clamp(1.2rem, calc(1.07rem + 0.63vw), 1.56rem);
   }
 
   .fecha {
     font-size: clamp(1.25rem, calc(1.14rem + 0.54vw), 1.56rem);
+    margin-top: 0.5rem;
   }
 
   .icon {
@@ -164,10 +173,10 @@
   }
 
   .skillsItem {
-    font-size: clamp(1.25rem, calc(1.14rem + 0.54vw), 1.56rem);
+    font-size: clamp(1.2rem, calc(1.07rem + 0.63vw), 1.56rem);
   }
 
   .skillsIcon {
-    font-size: 35px;
+    font-size: 30px;
   }
 }

@@ -14,7 +14,7 @@
   border-radius: 900px;
   background-color: #caa3e1;
   padding: 1rem;
-  max-width: 550px;
+  max-width: 500px;
   display: flex;
 }
 
@@ -33,19 +33,19 @@
 }
 
 .hola {
-  font-size: clamp(2rem, 3vw, 3.5rem);
+  font-size: clamp(2.49rem, calc(2.03rem + 2.31vw), 3.82rem);
   font-weight: 700;
   color: #c287e5;
 }
 
 .titulo {
-  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+  font-size: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
   font-weight: 700;
   color: #c287e5;
 }
 
 .subtitulo {
-  font-size: clamp(1.25rem, 2.2vw, 2.5rem);
+  font-size: clamp(1.44rem, calc(1.26rem + 0.89vw), 1.95rem);
   font-weight: 550;
   margin-bottom: 0.75rem;
   background-color: #ae55e3;
@@ -62,19 +62,22 @@
 
 @media (min-width: 583px) {
   .homeContenedor {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    height: 30rem;
-    padding-inline: 15rem;
-    gap: 5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
   }
 
   .homeLeft {
     padding-inline: 2rem;
-    width: 70%;
+    width: 50%;
   }
 
   .subtitulo {
     font-weight: 600;
+  }
+
+  .descripcion {
+    width: 100%;
   }
 }
