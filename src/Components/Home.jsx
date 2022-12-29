@@ -12,7 +12,7 @@ function Home() {
         {/* <img src={profile} alt="profile pic" className={styles.profilePic} /> */}
       </div>
 
-      <div className={styles.homeLeft}>
+      <div className={styles.homeRight}>
         <div className={styles.hola}>¡Hola!</div>
         <div className={styles.titulo}>Soy Lourdes López Pepa</div>
         <div className={styles.subtitulo}>Full Stack Developer</div>
