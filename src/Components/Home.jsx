@@ -22,10 +22,30 @@ function Home() {
           pensamiento creativo, resolución de problemas, trabajo en equipo,
           comunicación y autonomía.
         </div>
-        <a href={CV} download className={styles.contCurriculum}>
-          <RiDownload2Fill className={styles.iconCv} />
-          Mi Curriculum
-        </a>
+
+        <div className={styles.contacto}>
+          <a
+            href={CV}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.contCurriculum}
+          >
+            <RiDownload2Fill className={styles.iconCv} />
+            Mi Curriculum
+          </a>
+
+          <a href="https://github.com/lupilp" target="_blank" rel="noreferrer">
+            <RiGithubFill className={styles.icono} />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/lourdeslopezpepa/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiLinkedinFill className={styles.icono} />
+          </a>
+        </div>
       </div>
     </div>
   );

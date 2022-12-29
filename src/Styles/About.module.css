@@ -17,6 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f7f7ff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .titleAbout {
@@ -78,6 +80,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: #f7f7ff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .skills {
