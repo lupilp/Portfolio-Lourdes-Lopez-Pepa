@@ -1,6 +1,6 @@
 .persona {
   position: relative;
-  max-width: 26rem;
+  max-width: 20rem;
   margin-inline: auto;
 }
 
@@ -30,11 +30,23 @@
 .imagenPersona {
   position: relative;
   z-index: 2;
-  right: 3rem;
+  right: 1rem;
+  height: 80%;
   transform: scale(1.2);
   transition: transform 250ms ease-in-out;
 }
 
 .contPersona:hover .imagenPersona {
   transform: scale(1.2) translateY(-1rem);
+}
+
+@media (min-width: 583px) {
+  .persona {
+    max-width: 26rem;
+  }
+
+  .imagenPersona {
+    height: 94%;
+    right: 3.5rem;
+  }
 }
