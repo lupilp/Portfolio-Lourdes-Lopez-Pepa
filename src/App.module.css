@@ -12,5 +12,6 @@
     flex-direction: column;
     gap: 20rem;
     padding-inline: 1rem;
+    padding-bottom: 5rem;
   }
 }
