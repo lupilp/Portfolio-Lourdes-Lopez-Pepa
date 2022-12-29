@@ -47,10 +47,11 @@ button {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  background-color: #fafafd;
+  /* background-color: #fafafd; */
+  background-image: url("./Styles/Images/paper.jpg");
   color: #363636;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   height: 300vh;
 }
 
