@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "../Styles/Home.module.css";
-import profile from "../Styles/Images/profile.jpg";
+// import profile from "../Styles/Images/profile.jpg";
 import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
+import Profile from "../Components/Profile";
 
 function Home() {
   return (
     <div className={styles.homeContenedor}>
       <div className={styles.imageBorder}>
-        <img src={profile} alt="profile pic" className={styles.profilePic} />
+        <Profile></Profile>
+        {/* <img src={profile} alt="profile pic" className={styles.profilePic} /> */}
       </div>
 
       <div className={styles.homeLeft}>

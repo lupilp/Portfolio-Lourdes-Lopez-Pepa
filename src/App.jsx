@@ -3,7 +3,6 @@ import About from "./Components/About";
 import Contacto from "./Components/Contacto";
 import Home from "./Components/Home";
 import Nav from "./Components/Nav";
-import Profile from "./Components/Profile";
 import Proyectos from "./Components/Proyectos";
 
 function App() {
@@ -26,8 +25,6 @@ function App() {
         <section id="Contacto">
           <Contacto></Contacto>
         </section>
-
-        <Profile></Profile>
       </div>
     </>
   );
