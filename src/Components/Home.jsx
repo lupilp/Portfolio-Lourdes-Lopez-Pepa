@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "../Styles/Home.module.css";
 // import profile from "../Styles/Images/profile.jpg";
-import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 import Profile from "../Components/Profile";
+import { RiLinkedinFill, RiGithubFill, RiDownload2Fill } from "react-icons/ri";
+import CV from "../Styles/Images/CV.pdf";
 
 function Home() {
   return (
@@ -21,6 +22,10 @@ function Home() {
           pensamiento creativo, resolución de problemas, trabajo en equipo,
           comunicación y autonomía.
         </div>
+        <a href={CV} download className={styles.contCurriculum}>
+          <RiDownload2Fill className={styles.iconCv} />
+          Mi Curriculum
+        </a>
       </div>
     </div>
   );

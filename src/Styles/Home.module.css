@@ -43,6 +43,7 @@
   font-size: clamp(1.8rem, 2.8vw, 2.8rem);
   font-weight: 700;
   color: #c287e5;
+  margin-bottom: 1rem;
 }
 
 .subtitulo {
@@ -53,12 +54,49 @@
   color: #f7f7ff;
   border-radius: 30px;
   padding-inline: 2rem;
+  padding-block: 0.5rem;
   width: fit-content;
 }
 
 .descripcion {
   font-size: clamp(1rem, 1.4vw, 2rem);
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contCurriculum {
+  background-color: #ae55e3;
+  color: #f7f7ff;
+  font-weight: 600;
+  padding-block: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+  border-radius: 100vh;
+  width: fit-content;
+
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contCurriculum:hover {
+  background-color: #f6cbce;
+  color: #c287e5;
+  box-shadow: 0 0px 10px #f6cbce;
+  transition: all 0.2s ease;
+}
+
+.iconCv {
+  font-size: 2em;
+  background-color: #c287e5;
+  padding: 0.5rem;
+  border-radius: 100vh;
+}
+
+.contCurriculum:hover .iconCv {
+  background-color: #f7f7ff;
+  color: #c287e5;
+  box-shadow: 0 0px 10px #f6cbce;
+  transition: all 0.2s ease;
 }
 
 @media (min-width: 583px) {
