@@ -50,7 +50,7 @@
   font-size: clamp(1.25rem, 2.2vw, 2.5rem);
   font-weight: 550;
   margin-bottom: 0.75rem;
-  background-color: #ae55e3;
+  background-color: #caa3e1;
   color: #f7f7ff;
   border-radius: 30px;
   padding-inline: 2rem;
@@ -64,7 +64,7 @@
 }
 
 .contCurriculum {
-  background-color: #ae55e3;
+  background-color: #caa3e1;
   color: #f7f7ff;
   font-weight: 600;
   padding-block: 0.5rem;
@@ -87,7 +87,7 @@
 
 .iconCv {
   font-size: 2em;
-  background-color: #c287e5;
+  background-color: #caa3e1;
   padding: 0.5rem;
   border-radius: 100vh;
 }
@@ -100,7 +100,7 @@
 }
 
 .icono {
-  background-color: #ae55e3;
+  background-color: #caa3e1;
   color: #f7f7ff;
   font-weight: 600;
   border-radius: 100vh;
