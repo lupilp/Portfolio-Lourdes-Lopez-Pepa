@@ -25,6 +25,7 @@
   inset: auto 0 0;
   margin-inline: auto;
   border-radius: 50%;
+  box-shadow: 0 0px 10px #f6cbce;
 }
 
 .imagenPersona {
