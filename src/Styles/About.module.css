@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f7f7ff;
+  background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 2rem;
   border-radius: 30px;
@@ -51,7 +51,7 @@
 
 .icon {
   background-color: #caa3e1;
-  color: #f7f7ff;
+  color: #fff;
   border-radius: 50px;
   font-size: 50px;
   padding: 0.7rem;
@@ -71,7 +71,7 @@
   width: fit-content;
   padding-inline: 1rem;
   border-radius: 20px;
-  color: #f7f7ff;
+  color: #fff;
   font-weight: 700;
   font-style: italic;
 }
@@ -83,7 +83,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: #f7f7ff;
+  background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding-inline: 0.3;
   padding-block: 2rem;
@@ -95,7 +95,7 @@
   justify-content: center;
   list-style: none;
   flex-wrap: wrap;
-  color: #f7f7ff;
+  color: #fff;
   font-weight: 500;
   margin: auto;
 }
@@ -152,7 +152,7 @@
 
   .titleAbout {
     margin-bottom: 1.5rem;
-    font-size: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
+    font-size: clamp(2rem, calc(1.7rem + 1.2vw), 2.5rem);
   }
 
   .subTitle {

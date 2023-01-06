@@ -71,6 +71,6 @@ input[type="submit"]:hover {
 
   .edText {
     margin-bottom: 1.5rem;
-    font-size: clamp(2.07rem, calc(1.73rem + 1.7vw), 3.05rem);
+    font-size: clamp(2rem, calc(1.7rem + 1.2vw), 2.5rem);
   }
 }

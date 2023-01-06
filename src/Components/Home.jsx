@@ -3,7 +3,7 @@ import styles from "../Styles/Home.module.css";
 // import profile from "../Styles/Images/profile.jpg";
 import Profile from "../Components/Profile";
 import { RiLinkedinFill, RiGithubFill, RiDownload2Fill } from "react-icons/ri";
-import CV from "../Styles/Images/CV.pdf";
+import CV from "../Styles/Images/Portafolio-Lourdes-Lopez-Pepa-2023.pdf";
 import Carousel from "./Carousel";
 
 function Home() {
