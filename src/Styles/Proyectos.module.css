@@ -57,6 +57,7 @@
   border-radius: 20px;
   padding-right: 1rem;
   color: #f7f7ff;
+  cursor: pointer;
 }
 
 .github:hover {
