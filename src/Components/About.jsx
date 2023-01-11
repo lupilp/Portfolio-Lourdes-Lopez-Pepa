@@ -21,7 +21,7 @@ function About() {
 
       <div className={styles.contenidoSobreMi}>
         <div className={styles.aboutLeft}>
-          <div className={styles.subTitle}>Educacion</div>
+          <div className={styles.subTitle}>Educación</div>
           <div className={styles.contenidoEducación}>
             <div className={styles.educación}>
               <div className={styles.izq}>
@@ -41,7 +41,7 @@ function About() {
               </div>
 
               <div className={styles.der}>
-                <div className={styles.edTitle}>Diseñadora Grafica</div>
+                <div className={styles.edTitle}>Diseñadora Gráfica</div>
                 <div className={styles.institucion}>
                   Instituto Superior San Jorge
                 </div>
