@@ -54,14 +54,20 @@ function Contacto() {
     );
   };
 
-  // let btnDisabled = !(
-  //   input.user_name.length &&
-  //   input.user_email.length &&
-  //   input.message.length
-  // );
+  let btnDisabled = !(
+    input.user_name.length &&
+    input.user_email.length &&
+    input.message.length
+  );
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    setinput({
+      user_name: "",
+      user_email: "",
+      message: "",
+    });
 
     emailjs
       .sendForm(
@@ -124,7 +130,14 @@ function Contacto() {
             <div className={styles.error}>{errors.message}</div>
           )}
         </div>
-        <input type="submit" value="Enviar" />
+        <button
+          type="submit"
+          disabled={btnDisabled}
+          value="Enviar"
+          className={styles.btn}
+        >
+          Enviar
+        </button>
       </form>
     </div>
   );
